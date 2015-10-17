@@ -1,0 +1,44 @@
+.slogan {
+    font-size: 100px; 
+    padding-bottom: 20px;
+    line-height: 1;
+    color: #767777;
+    font-weight: 300;
+    margin: auto; 
+}
+
+::-webkit-resizer { 
+   border-bottom: 8px double #4285F4; 
+}
+
+.m-height-50{
+	max-height: 50px;
+}
+
+.m-height-30{
+	max-height: 30px;
+}
+
+.gr-border{
+	border: 1px dashed gray;
+}
+.thumb{
+	width: 60px;
+}
+
+.profile_thumb{
+	width: 360px;
+}
+
+.lv-avatar-lg {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    margin-right: 15px;
+    padding: 0!important;
+    text-transform: uppercase;
+}
