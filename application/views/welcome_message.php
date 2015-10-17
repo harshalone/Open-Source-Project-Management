@@ -17,7 +17,7 @@
                                 <div class="card-body card-padding">
                                     Please help us if you are good with Codeignitor, Testing or Continuous automation. We are looking for helping hands who can contribute to this awesome software.
                                     <br/><br/>
-                                    <a href="<? echo site_url('user/register');?>" class="btn btn-success btn-lg waves-effect">
+                                    <a href="https://github.com/harshalone/Open-Source-Project-Management" class="btn btn-success btn-lg waves-effect" target="_blank">
                             <i class="md-account-box"></i>
                               Github Repo</a>
                               
