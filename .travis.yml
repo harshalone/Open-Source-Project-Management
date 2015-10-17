@@ -10,7 +10,7 @@ php:
   # aliased to a recent 5.6.x version
   - 5.6 
 before_install:
- - php /home/travis/.phpenv/versions/5.4.25/bin/composer.phar self-update
+ - php /home/travis/.phpenv/versions/5.6/bin/composer self-update
 before_script:  
  - composer install
 # omitting "script:" will default to phpunit
