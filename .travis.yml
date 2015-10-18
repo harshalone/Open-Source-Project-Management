@@ -11,6 +11,7 @@ php:
   - 5.6 
 before_install:
  - php /home/travis/.phpenv/versions/5.6/bin/composer self-update
+ 
 before_script:  
  - composer install
 # omitting "script:" will default to phpunit
