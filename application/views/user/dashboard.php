@@ -1,4 +1,5 @@
 <section id="main">
+<<<<<<< HEAD
 
     <div class="block-header">
         <br/>
@@ -14,6 +15,21 @@
 
     </div>
 
+=======
+
+    <div class="block-header">
+        <br/>
+        <h2 class="pull-left">Project Title here</h2>
+
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-primary waves-effect">Backlog</button>
+            <button type="button" class="btn btn-default waves-effect">Active Sprints</button>
+            <button type="button" class="btn btn-default waves-effect">Reports</button>
+        </div>
+
+    </div>
+
+>>>>>>> origin/master
     <section id="content">
         <div id="" class="col-sm-6">
             <div class="card">
@@ -92,10 +108,17 @@
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li>
                                             <a href="">Edit</a>
+<<<<<<< HEAD
                                         </li>
                                         <li>
                                             <a href="">Delete</a>
                                         </li>
+=======
+                                        </li>
+                                        <li>
+                                            <a href="">Delete</a>
+                                        </li>
+>>>>>>> origin/master
                                     </ul>
                                 </div>
                             </div>
@@ -212,6 +235,7 @@
             </div>
 
         </div>
+<<<<<<< HEAD
     </section>
     
     <div class="modal fade" id="preventClick" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
@@ -230,3 +254,6 @@
                                     </div>
                                 </div>
                             </div>
+=======
+    </section>
+>>>>>>> origin/master
