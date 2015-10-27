@@ -8,7 +8,7 @@
     <title>open source project management</title>
 
     <!-- Vendor CSS -->
-    <link href="theme/assets/css/animate.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>theme/assets/css/animate.min.css" rel="stylesheet">
    
 
     <!-- CSS -->
@@ -30,5 +30,5 @@
        }
        ?> 
       
-      <link rel="stylesheet" href="theme/assets/css/custom.css" /> 
+      <link rel="stylesheet" href="<?=base_url()?>theme/assets/css/custom.css" /> 
 </head>
