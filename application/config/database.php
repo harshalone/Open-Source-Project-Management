@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'opensour_ospm',
-	'password' => 'VH2Kp3_{^kkA',
-	'database' => 'opensour_ospm',
+	'hostname' => 'localhost_SERVERNAME_HERE',
+	'username' => 'USERNAME_HERE',
+	'password' => 'PASSWORD_HERE',
+	'database' => 'DATABASE_NAME_HERE',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
