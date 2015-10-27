@@ -8,11 +8,11 @@
     <title>open source project management</title>
 
     <!-- Vendor CSS -->
-    <link href="/theme/assets/css/animate.min.css" rel="stylesheet">
+    <link href="theme/assets/css/animate.min.css" rel="stylesheet">
    
 
     <!-- CSS -->
-    <link href="/theme/assets/css/app.min.css" rel="stylesheet"> 
+    <link href="theme/assets/css/app.min.css" rel="stylesheet"> 
      <?php //echo $this->uri->uri_string();
      if (strpos($this->uri->uri_string(), "user/profile") !== false){ 
        echo link_tag('theme/assets/css/app.min.1.css');
@@ -30,5 +30,5 @@
        }
        ?> 
       
-      <link rel="stylesheet" href="/theme/assets/css/custom.css" /> 
+      <link rel="stylesheet" href="theme/assets/css/custom.css" /> 
 </head>

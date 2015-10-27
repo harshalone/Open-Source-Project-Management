@@ -5,6 +5,12 @@
                     <center>
                  <div class="slogan">Open Source Project Management</div>
                  <h1>Create userstories and follow up. Simple is that!</h1></center>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img style="width:100%;" src="theme/assets/image/Safari-Flat-Browser.png" />
+                        </div>
+                    </div>
+                    <br/>
                  <div class="row">
                         <div class="col-sm-6">
                             <div class="card">
