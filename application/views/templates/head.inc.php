@@ -12,7 +12,7 @@
    
 
     <!-- CSS -->
-    <link href="theme/assets/css/app.min.css" rel="stylesheet"> 
+    <link href="<?=base_url()?>theme/assets/css/app.min.css" rel="stylesheet"> 
      <?php //echo $this->uri->uri_string();
      if (strpos($this->uri->uri_string(), "user/profile") !== false){ 
        echo link_tag('theme/assets/css/app.min.1.css');
