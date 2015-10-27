@@ -13,18 +13,7 @@
 
     </div>
  
-    <div class="block-header">
-        <br/>
-        <h2 class="pull-left">Project Title here</h2>
-
-        <div class="btn-group pull-right">
-            <button type="button" class="btn btn-primary waves-effect">Backlog</button>
-            <button type="button" class="btn btn-default waves-effect">Active Sprints</button>
-            <button type="button" class="btn btn-default waves-effect">Reports</button>
-        </div>
-
-    </div>
- 
+     
     <section id="content">
         <div id="" class="col-sm-6">
             <div class="card">
