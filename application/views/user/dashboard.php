@@ -24,8 +24,7 @@
         </div>
 
     </div>
-
->>>>>>> origin/master
+ 
     <section id="content">
         <div id="" class="col-sm-6">
             <div class="card">
@@ -230,8 +229,7 @@
                 </div>
             </div>
 
-        </div>
-<<<<<<< HEAD
+        </div> 
     </section>
     
     <div class="modal fade" id="preventClick" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
