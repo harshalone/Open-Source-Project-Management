@@ -1,6 +1,4 @@
-<section id="main">
-<<<<<<< HEAD
-
+<section id="main"> 
     <div class="block-header">
         <br/>
         <h2 class="pull-left">Project Title here</h2>
@@ -14,9 +12,7 @@
         </div>  
 
     </div>
-
-=======
-
+ 
     <div class="block-header">
         <br/>
         <h2 class="pull-left">Project Title here</h2>
@@ -108,17 +104,17 @@
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li>
                                             <a href="">Edit</a>
-<<<<<<< HEAD
+ 
                                         </li>
                                         <li>
                                             <a href="">Delete</a>
                                         </li>
-=======
+ 
                                         </li>
                                         <li>
                                             <a href="">Delete</a>
                                         </li>
->>>>>>> origin/master
+ 
                                     </ul>
                                 </div>
                             </div>
@@ -254,6 +250,6 @@
                                     </div>
                                 </div>
                             </div>
-=======
+ 
     </section>
->>>>>>> origin/master
+ 
