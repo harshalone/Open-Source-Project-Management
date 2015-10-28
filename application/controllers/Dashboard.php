@@ -27,7 +27,7 @@ class Dashboard extends CI_Controller {
             $this->load->view('templates/head.inc.php', $data); 
             $this->load->view('templates/header', $data);
             $this->load->view('user/dashboard', $data);
-            $this->load->view('templates/footer', $data);
+            $this->load->view('templates/inc-footer', $data);
 		
 	}
 	
