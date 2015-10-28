@@ -10,7 +10,7 @@
 				</div>
 			</div>
 		<?php endif; ?>
-		<?php if (isset($error)) : ?>
+		<?php if (isset($error)) : ?> 
 			<div class="col-md-12">
 				<div class="alert alert-danger" role="alert">
 					<?php echo $error ?>
