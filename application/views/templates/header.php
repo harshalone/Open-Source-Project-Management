@@ -2,9 +2,9 @@
     <header id="header"> 
         <ul class="header-inner">
             <li class="logo">
-                <a href="<?php echo site_url(); ?>"> &nbsp; <strong>open source project management</strong></a>
+                <a href="<?php echo site_url(); ?>"> &nbsp; <strong>JD</strong></a>
             </li>
-            <?php if ($this->session->logged_in == FALSE){ ?>
+            <?php if ($this->session->logged_in == TRUE){ ?>
             <li >
                 <ul class="top-menu"> 
                     <li class="dropdown">
