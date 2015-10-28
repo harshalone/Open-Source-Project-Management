@@ -6,7 +6,7 @@
                 <?php if (validation_errors()) : ?>
 			<div class="col-md-12">
 				<div class="alert alert-danger" role="alert">
-					<?php= validation_errors() ?>
+					<?php echo validation_errors() ?>
 				</div>
 			</div>
 		<?php endif; ?>
