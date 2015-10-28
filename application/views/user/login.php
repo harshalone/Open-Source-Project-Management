@@ -6,26 +6,26 @@
                 <?php if (validation_errors()) : ?>
 			<div class="col-md-12">
 				<div class="alert alert-danger" role="alert">
-					<?= validation_errors() ?>
+					<?php= validation_errors() ?>
 				</div>
 			</div>
 		<?php endif; ?>
 		<?php if (isset($error)) : ?>
 			<div class="col-md-12">
 				<div class="alert alert-danger" role="alert">
-					<?= $error ?>
+					<?php echo $error ?>
 				</div>
 			</div>
 		<?php endif; ?> 
                 <?php if (isset($success)) : ?>
 			<div class="col-md-12">
 				<div class="alert alert-success" role="alert">
-					<?= $success ?>
+					<?php echo $success ?>
 				</div>
 			</div>
 		<?php endif; ?> 
                 
-                <form role="form" method="post" action="<? echo site_url('user/login');?>"> 
+                <form role="form" method="post" action="<?php echo site_url('user/login');?>"> 
                     <div class="form-group fg-line">
                         <h4>Email address</h4>
                         <input type="email" name="email" class="input-lg form-control fg-input" id="exampleInputEmail1" placeholder="Enter email">
@@ -39,7 +39,7 @@
                             <input type="checkbox" value="">
                             <i class="input-helper"></i>
                             Remember me <a href="">- How this works</a>
-                            <br/><br/> Not registered yet? <a href="<? echo site_url('user/register');?>">Register here</a> 
+                            <br/><br/> Not registered yet? <a href="<?php echo site_url('user/register');?>">Register here</a> 
                         </label>
                     </div>
 

@@ -56,7 +56,7 @@
         <![endif]-->
 
     <!-- Javascript Libraries -->
-    <? include("js.inc.php"); ?>
+    <?php include("js.inc.php"); ?>
 
 
 

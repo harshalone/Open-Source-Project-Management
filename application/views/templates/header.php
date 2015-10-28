@@ -36,7 +36,7 @@
                     </ul>
                 </li>
                 <li><button data-toggle="modal" href="#preventClick" class="btn btn-primary waves-effect">Create</button></li>
-            <? } ?>
+            <?php } ?>
 
             <li class="pull-right"> 
                 <ul class="top-menu">
@@ -45,10 +45,10 @@
                         <ul class="dropdown-menu dm-icon pull-right">
                             <?php if ($this->session->logged_in == FALSE){ ?>
                             <li>
-                                <a href="<? echo site_url('user/register');?>"><i class="md md-person"></i> Register</a>
+                                <a href="<?php echo site_url('user/register');?>"><i class="md md-person"></i> Register</a>
                             </li>
                             <li>
-                                <a href="<? echo site_url('user/login');?>"><i class="md md-person"></i> Login</a>
+                                <a href="<?php echo site_url('user/login');?>"><i class="md md-person"></i> Login</a>
                             </li> 
                             <?php }else { ?>
                             <li>
