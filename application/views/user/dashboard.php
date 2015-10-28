@@ -1,15 +1,7 @@
 <section id="main"> 
     <div class="block-header">
         <br/>
-        <h2 class="pull-left">Project Title here</h2>
-        
-         
-        <div class="btn-group pull-right"> 
-            <button data-toggle="modal" href="#preventClick" class="btn btn-primary waves-effect">Create</button>
-            <button type="button" class="btn btn-bluegray waves-effect">Backlog</button>
-            <button type="button" class="btn btn-default waves-effect">Active Sprints</button>
-            <button type="button" class="btn btn-default waves-effect">Reports</button>
-        </div>  
+        <h2 class="pull-left">Project Title here</h2> 
 
     </div>
  

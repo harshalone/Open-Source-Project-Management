@@ -42,3 +42,13 @@
     padding: 0!important;
     text-transform: uppercase;
 }
+.top-menu-item{
+color: #fff;
+padding: 5px;
+font-size: 14px;
+margin: 0 10px 0 10px;
+}
+
+.top-menu-item:hover, .top-menu-item:visited, .top-menu-item:active {
+color: #fff; 
+} 

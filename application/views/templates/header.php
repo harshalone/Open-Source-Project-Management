@@ -4,6 +4,39 @@
             <li class="logo">
                 <a href="<?php echo site_url(); ?>"> &nbsp; <strong>open source project management</strong></a>
             </li>
+            <?php if ($this->session->logged_in == FALSE){ ?>
+            <li >
+                <ul class="top-menu"> 
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="top-menu-item" href=""> Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu dm-icon">
+                            <li>
+                                <a href="register.php"> Project 1</a>
+                            </li>  
+                            <li>
+                                <a href="login.php"> Project 2</a>
+                            </li> 
+                        </ul>
+                    </li> 
+                    </ul>
+                </li>
+                <li >
+                <ul class="top-menu"> 
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="top-menu-item" href=""> Agile <span class="caret"></span></a>
+                        <ul class="dropdown-menu dm-icon">
+                            <li>
+                                <a href="register.php"> Project 1</a>
+                            </li>  
+                            <li>
+                                <a href="login.php"> Project 2</a>
+                            </li> 
+                        </ul>
+                    </li> 
+                    </ul>
+                </li>
+                <li><button data-toggle="modal" href="#preventClick" class="btn btn-primary waves-effect">Create</button></li>
+            <? } ?>
 
             <li class="pull-right"> 
                 <ul class="top-menu">
