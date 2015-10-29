@@ -52,3 +52,6 @@ margin: 0 10px 0 10px;
 .top-menu-item:hover, .top-menu-item:visited, .top-menu-item:active {
 color: #fff; 
 } 
+.modal-open[style] {
+padding-right: 0px !important;
+}
