@@ -571,3 +571,6 @@ ALTER TABLE `profiles`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/* one user for testing */
+INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `password`, `randno`, `pic`, `created_at`, `updated_at`, `is_admin`, `is_confirmed`, `is_deleted`) VALUES
+(37, 'kansa gous', 'kansagous', 'kansagous@gmail.com', '$2y$10$KrFVF4YN0ehqxZte0EdodekU0kQMkID9uGqTUBhL3mrq205e8tHgC', '', 1, '2015-08-11 07:41:21', NULL, 0, 1, 0);
