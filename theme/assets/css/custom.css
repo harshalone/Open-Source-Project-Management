@@ -5,11 +5,7 @@
     color: #767777;
     font-weight: 300;
     margin: auto; 
-}
-
-::-webkit-resizer { 
-   border-bottom: 8px double #4285F4; 
-}
+} 
 
 .m-height-50{
 	max-height: 50px;

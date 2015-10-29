@@ -25,7 +25,7 @@
 			</div>
 		<?php endif; ?> 
                 
-                <form role="form" method="post" action="<? echo site_url('user/register');?>">
+                <form role="form" method="post" action="<?php echo site_url('user/register');?>">
                     <div class="form-group fg-line">
                         <h4>Fullname</h4>
                         <input type="text" name="fullname" value="<?php echo set_value('fullname'); ?>" class="input-lg form-control fg-input" id="exampleInputEmail1" placeholder="Enter your full name here">
