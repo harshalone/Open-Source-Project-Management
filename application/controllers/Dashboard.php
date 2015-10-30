@@ -84,6 +84,53 @@ class Dashboard extends CI_Controller {
 		}
 		
 	} 
+    
+    public function create_issue() {
+        
+        $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);    
+
+   //add the header here
+    header('Content-Type: application/json');
+    echo json_encode( $arr );
+        /*    
+            $logged_in = $this->session->logged_in; 
+            if ($logged_in == FALSE) { redirect('/user/login');}
+            
+            // fetch dropdown arrays
+            $this->load->model('issue_model'); 
+          
+            // load form helper and validation library
+            $this->load->helper('form');
+            $this->load->library('form_validation');
+
+            // create the data object
+            $data = new stdClass();  
+
+            $this->form_validation->set_rules('title', 'Title', 'required'); 
+            $this->form_validation->set_rules('issue type', 'issuetype', 'required'); 
+            $this->form_validation->set_rules('description', 'Description', 'required'); 
+             
+        
+
+		 if ($this->form_validation->run() == false) {
+					
+		            echo "error";
+            
+		 } else {
+					
+                    // set variables from the form
+                    $title          = $this->input->post('title');
+                    $issuetype      = $this->input->post('issuetype');  
+                    $description    = $this->input->post('description'); 
+                    $userid         = $_SESSION['user_id'];
+		           
+                    $this->project_model->create_issue($title, $userid, $issuetype, $description);
+                    $data->success = 'Your project created successfully. Once our moderators varify, it will be visible on our website.';
+                    echo "success";
+		 }
+		  */   
+            
+        }
         
     public function post_project() {
             
