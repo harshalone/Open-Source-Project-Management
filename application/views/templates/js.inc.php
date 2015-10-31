@@ -6,4 +6,6 @@
 <script src="<?=base_url()?>theme/assets/js/waves.min.js"></script>
 <script src="<?=base_url()?>theme/assets/js/bootstrap-growl.min.js"></script>
 <script src="<?=base_url()?>theme/assets/js/sweet-alert.min.js"></script> 
+<script src="<?=base_url()?>theme/assets/js/jquery.form.js"></script>
+<script src="<?=base_url()?>theme/assets/js/jq-form-submit.js"></script>
 <script src="<?=base_url()?>theme/assets/js/functions.js"></script>
