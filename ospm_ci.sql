@@ -57,6 +57,19 @@ CREATE TABLE IF NOT EXISTS `category` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
+
+CREATE TABLE IF NOT EXISTS `issues` (
+  `issueid` int(100) NOT NULL AUTO_INCREMENT,
+  `userid` int(100) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `issuetype` varchar(255) NOT NULL,
+  `details` longtext NOT NULL,
+  `status` int(2) DEFAULT '0',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`issueid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
 --
 -- Dumping data for table `category`
 --
