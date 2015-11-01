@@ -54,15 +54,11 @@
                             <li>
                                 <a href="<?php echo site_url('dashboard');?>"><i class="md-dashboard"></i> Dashboard</a>
                             </li>
-                            <li>
-<<<<<<< HEAD
+                            <li> 
                                 <a href="<? echo site_url('dashboard/settings');?>"><i class="md md-settings"></i> Settings</a>
                             </li>
-                            <li>
-                                <a href="<? echo site_url('user/logout');?>"><i class="md-lock-outline"></i> Logout</a>
-=======
+                            <li> 
                                 <a href="<?php echo site_url('user/logout');?>"><i class="md-lock-outline"></i> Logout</a>
->>>>>>> origin/master
                             </li>
                             <?php } ?>
                         </ul>
