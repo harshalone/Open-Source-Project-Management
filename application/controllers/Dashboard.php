@@ -33,9 +33,8 @@ class Dashboard extends CI_Controller {
             $this->load->view('templates/inc-footer', $data);
 		
 	}
-	
-	
-        public function profile()
+    
+    public function profile()
 		{ 
 			   
 			$data['title'] = 'Profile';
@@ -131,7 +130,17 @@ class Dashboard extends CI_Controller {
 		    
             
         }
-        
+    
+    public function ajax_load_issue() {
+		$this->load->model('issue_model'); 
+        // create the data object
+        $data = new stdClass();  
+        $data->issueid = $this->input->post('issue_id');
+        $data->issue_details = $this->issue_model->get_issue($data->issueid);
+        $this->load->view('user/ajax/issue', $data);
+		 
+	}
+    
     public function post_project() {
             
             $logged_in = $this->session->logged_in; 

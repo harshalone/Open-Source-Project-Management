@@ -187,125 +187,7 @@ $(document).ready(function(){
     	});
     }
     
-    /*
-     * Calendar Widget
-     */
-    if($('#calendar-widget')[0]) {
-        (function(){
-            $('#calendar-widget').fullCalendar({
-		        contentHeight: 'auto',
-		        theme: true,
-                header: {
-                    right: '',
-                    center: 'prev, title, next',
-                    left: ''
-                },
-                defaultDate: '2014-06-12',
-                editable: true,
-                events: [
-                    {
-                        title: 'All Day',
-                        start: '2014-06-01',
-                        className: 'bgm-cyan'
-                    },
-                    {
-                        title: 'Long Event',
-                        start: '2014-06-07',
-                        end: '2014-06-10',
-                        className: 'bgm-orange'
-                    },
-                    {
-                        id: 999,
-                        title: 'Repeat',
-                        start: '2014-06-09',
-                        className: 'bgm-lightgreen'
-                    },
-                    {
-                        id: 999,
-                        title: 'Repeat',
-                        start: '2014-06-16',
-                        className: 'bgm-blue'
-                    },
-                    {
-                        title: 'Meet',
-                        start: '2014-06-12',
-                        end: '2014-06-12',
-                        className: 'bgm-teal'
-                    },
-                    {
-                        title: 'Lunch',
-                        start: '2014-06-12',
-                        className: 'bgm-gray'
-                    },
-                    {
-                        title: 'Birthday',
-                        start: '2014-06-13',
-                        className: 'bgm-pink'
-                    },
-                    {
-                        title: 'Google',
-                        url: 'http://google.com/',
-                        start: '2014-06-28',
-                        className: 'bgm-bluegray'
-                    }
-                ]
-            });
-        })();
-    }
-    
-    /*
-     * Weather Widget
-     */
-    if ($('#weather-widget')[0]) {
-        $.simpleWeather({
-            location: 'Austin, TX',
-            woeid: '',
-            unit: 'f',
-            success: function(weather) {
-                html = '<div class="weather-status">'+weather.temp+'&deg;'+weather.units.temp+'</div>';
-                html += '<ul class="weather-info"><li>'+weather.city+', '+weather.region+'</li>';
-                html += '<li class="currently">'+weather.currently+'</li></ul>';
-                html += '<div class="weather-icon wi-'+weather.code+'"></div>';
-                html += '<div class="dash-widget-footer"><div class="weather-list tomorrow">';
-                html += '<span class="weather-list-icon wi-'+weather.forecast[2].code+'"></span><span>'+weather.forecast[1].high+'/'+weather.forecast[1].low+'</span><span>'+weather.forecast[1].text+'</span>';
-                html += '</div>';
-                html += '<div class="weather-list after-tomorrow">';
-                html += '<span class="weather-list-icon wi-'+weather.forecast[2].code+'"></span><span>'+weather.forecast[2].high+'/'+weather.forecast[2].low+'</span><span>'+weather.forecast[2].text+'</span>';
-                html += '</div></div>';
-                $("#weather-widget").html(html);
-            },
-            error: function(error) {
-                $("#weather-widget").html('<p>'+error+'</p>');
-            }
-        });
-    }
-    
-    /*
-     * Todo Add new item
-     */
-    if ($('#todo-lists')[0]) {
-    	//Add Todo Item
-    	$('body').on('click', '#add-tl-item .add-new-item', function(){
-    	    $(this).parent().addClass('toggled'); 
-    	});
-            
-            //Dismiss
-            $('body').on('click', '.add-tl-actions > a', function(e){
-                e.preventDefault();
-                var x = $(this).closest('#add-tl-item');
-                var y = $(this).data('tl-action');
-                            
-                if (y == "dismiss") {
-                    x.find('textarea').val('');
-                    x.removeClass('toggled'); 
-                }
-                
-                if (y == "save") {
-                    x.find('textarea').val('');
-                    x.removeClass('toggled'); 
-                }
-    	});
-    }
+     
     
     /*
      * Auto Hight Textarea
@@ -459,23 +341,7 @@ $(document).ready(function(){
 	});
     }
     
-    //Range slider with value
-    if($('.input-slider-values')[0]) {
-	$('.input-slider-values').noUiSlider({
-	    start: [ 45, 80 ],
-	    connect: true,
-	    direction: 'rtl',
-	    behaviour: 'tap-drag',
-	    range: {
-		    'min': 0,
-		    'max': 100
-	    }
-	});
-
-	$('.input-slider-values').Link('lower').to($('#value-lower'));
-	$('.input-slider-values').Link('upper').to($('#value-upper'), 'html');
-    }
-    
+     
     /*
      * Input Mask
      */
@@ -483,18 +349,7 @@ $(document).ready(function(){
 	$('.input-mask').mask();
     }
     
-    /*
-     * Color Picker
-     */
-    if ($('.color-picker')[0]) {
-	$('.color-picker').each(function(){
-	    $('.color-picker').each(function(){
-		var colorOutput = $(this).closest('.cp-container').find('.cp-value');
-		$(this).farbtastic(colorOutput);
-	    });
-	});
-    }
-    
+     
     /*
      * HTML Editor
      */
@@ -589,35 +444,7 @@ $(document).ready(function(){
         });
     };
     
-    //Welcome Message (not for login page)
-    if (!$('.login-content')[0]) {
-        //notify('Welcome back Mallinda Hollaway', 'inverse');
-    }
-
-    /*
-     * Waves Animation
-     */
-    (function(){
-        var wavesList = ['.btn'];
-
-        for(var x = 0; x < wavesList.length; x++) {
-            if($(wavesList[x])[0]) {
-                if($(wavesList[x]).is('a')) {
-                    $(wavesList[x]).not('.btn-icon, input').addClass('waves-effect waves-button');
-                }
-                else {
-                    $(wavesList[x]).not('.btn-icon, input').addClass('waves-effect');
-                }
-            }
-        }
-
-        setTimeout(function(){
-            if ($('.waves-effect')[0]) {
-               Waves.displayEffect();
-            }
-        });
-    })();
-    
+     
     /*
      * Lightbox
      */
@@ -754,27 +581,32 @@ $(document).ready(function(){
 	});
     }
     
-    /*
-     * Clear Local Storage
-     */
-    if ($('[data-action="clear-localstorage"]')[0]) {
-	var cls = $('[data-action="clear-localstorage"]');
-	
-	cls.on('click', function(e) {
-	    e.preventDefault();
-	    
-                swal({   
-                    title: "Are you sure?",   
-                    text: "All your saved localStorage values will be removed",   
-                    type: "warning",   
-                    showCancelButton: true,   
-                    confirmButtonColor: "#DD6B55",   
-                    confirmButtonText: "Yes, delete it!",   
-                    closeOnConfirm: false 
-                }, function(){
-		    localStorage.clear();
-                    swal("Done!", "localStorage is cleared", "success"); 
-                });
-	});
-    }
+     
 });
+
+
+// Load contents in div
+(function($, window, document) {
+ 
+$('.loadissue').click(function(){
+  $('.loading').show();
+  event.preventDefault();
+  var url_to_load = $(this).attr('href');
+  var issueid    = $(this).attr('issueid');
+  $("#ajax-container").load( url_to_load, { issue_id: issueid }, function() {
+    $('.loading').hide();
+  });
+});
+
+}(window.jQuery, window, document));
+
+
+
+
+
+
+
+
+
+
+

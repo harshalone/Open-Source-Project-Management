@@ -77,3 +77,6 @@
             <i id="top-search-close">&times;</i>
         </div>
     </header>
+<div class="loading" style="display:none;">
+<img class="loading-image"  src="<?php echo base_url('theme/assets/image/animated_loading.gif');?>" />
+</div>

@@ -48,7 +48,13 @@ class Issue_model extends CI_Model {
             return $query->result_array();
 
 	}
+    
+    public function get_issue($id) {
         
+            $query = $this->db->get_where('issues', array('issueid' => $id));
+            return $query->row_array();
+
+	}
     public function delete_skill($id) {
 		
 		 if ($id != 0)

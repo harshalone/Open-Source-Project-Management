@@ -68,7 +68,7 @@
                     <div class="lv-body">
                          
                         <?php foreach($openissues as $key=>$issue){ ?>
-
+                        
                         <div class="lv-item media">
                             <div class="checkbox pull-left">
                                 <span class="badge"><?php echo $issue['issueid']; ?></span>
@@ -79,10 +79,14 @@
                                 </label>
                             </div>
                             <div class="media-body">
-                                <div class="lv-title"><?php echo $issue['title']; ?></div>
+                                <div class="lv-title">
+                                    <a issueid="<?php echo $issue['issueid']; ?>" href="<?php echo site_url('dashboard/ajax_load_issue');?>" class="black-anchor loadissue" >
+                                        <?php echo $issue['title']; ?>
+                                    </a>
+                                </div>
 
                                 <div class="lv-actions actions dropdown">
-                                    <a href="" data-toggle="dropdown" aria-expanded="true">
+                                    <a href="#" aria-expanded="true">
                                         <i class="md md-more-vert"></i>
                                     </a>
 
@@ -103,7 +107,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         <?php } ?>
                     </div>
                 </div>
@@ -113,7 +117,7 @@
 
         </div>
         <div id="" class="col-sm-6">
-
+           <div id="ajax-container">
             <div class="card">
                 <div class="card-header ch-alt">
                     <h2>Project Name / <a >119</a> / Customers should be able to leave feedback
@@ -215,7 +219,7 @@
                 </div>
             </div>
 
-        </div>
+           </div>
     </section>
 
     <?php include("create-model-box.php"); ?>
