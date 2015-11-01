@@ -17,13 +17,16 @@ class Dashboard extends CI_Controller {
 		
             $logged_in = $this->session->logged_in;
             
-            if ($logged_in == FALSE)
-            {
-                    redirect('/user/login');
-            }
-            // create the data object
-	        $data = new stdClass();
+            if ($logged_in == FALSE) redirect('/user/login'); 
             
+            $perpage = 10;
+            $segment = 10;
+            // create the data object
+            $this->load->model('issue_model'); 
+            
+	        $data = new stdClass();
+            $data->openissues = $this->issue_model->fetch_open_issue(0, $perpage, $segment);
+            //print_r($data->openissues);
             $this->load->view('templates/head.inc.php', $data); 
             $this->load->view('templates/header', $data);
             $this->load->view('user/dashboard', $data);
@@ -86,13 +89,8 @@ class Dashboard extends CI_Controller {
 	} 
     
     public function create_issue() {
-        
-        $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);    
-
-   //add the header here
-    header('Content-Type: application/json');
-    echo json_encode( $arr );
-        /*    
+           header('Content-Type: application/json');
+               
             $logged_in = $this->session->logged_in; 
             if ($logged_in == FALSE) { redirect('/user/login');}
             
@@ -106,15 +104,16 @@ class Dashboard extends CI_Controller {
             // create the data object
             $data = new stdClass();  
 
-            $this->form_validation->set_rules('title', 'Title', 'required'); 
-            $this->form_validation->set_rules('issue type', 'issuetype', 'required'); 
-            $this->form_validation->set_rules('description', 'Description', 'required'); 
-             
+            $this->form_validation->set_rules('title', 'Title', 'required');  
+            $this->form_validation->set_rules('description', 'Description', 'required');   
+            $this->form_validation->set_rules('issuetype', 'Issue type', 'required'); 
         
-
 		 if ($this->form_validation->run() == false) {
 					
-		            echo "error";
+		     //add the header here
+             $response = array('status' => false,  
+                               'error_msg' => validation_errors());   
+              echo json_encode( $response );
             
 		 } else {
 					
@@ -124,11 +123,12 @@ class Dashboard extends CI_Controller {
                     $description    = $this->input->post('description'); 
                     $userid         = $_SESSION['user_id'];
 		           
-                    $this->project_model->create_issue($title, $userid, $issuetype, $description);
-                    $data->success = 'Your project created successfully. Once our moderators varify, it will be visible on our website.';
-                    echo "success";
+                    $this->issue_model->create_issue($title, $userid, $issuetype, $description);
+                    $response = array('status' => true,  
+                                      'success' => "successfully posted");   
+                    echo json_encode( $response );
 		 }
-		  */   
+		    
             
         }
         

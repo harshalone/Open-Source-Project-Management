@@ -21,14 +21,20 @@
   }(window.jQuery, window, document));
  
 // pre-submit callback 
-function showRequest(formData, jqForm, options) {  
-    var queryString = $.param(formData);  
-    $('#responce').html('About to submit: \n\n' + queryString);  
+function showRequest(formData, jqForm, options) {   
+    //$('#responce').html('About to submit: \n\n' + queryString);  
     return true; 
 } 
  
 // post-submit callback 
-function showResponse(responseText, statusText, xhr, $form)  {  
- 
-    $('#responce').html('status: ' + statusText + '\n\nresponseText: \n' + responseText.a); 
+function showResponse(responseText, statusText, xhr, $form)  {   
+    
+ if(responseText.status==false){ 
+   $('#responce').show().html(responseText.error_msg); 
+ }
+ else{ 
+   location.reload();
+   $('#responce').show().html(responseText.success); 
+ } 
+    
 } 

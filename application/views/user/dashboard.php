@@ -2,7 +2,11 @@
     <div class="block-header">
         <br/>
         <h2 class="pull-left">Project Title here</h2> 
-
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-default waves-effect">Backlog</button>
+            <button type="button" class="btn btn-default waves-effect">Active Sprint</button>
+            <button type="button" class="btn btn-default waves-effect">Reports</button>
+        </div>
     </div>
 
 
@@ -26,16 +30,16 @@
 
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li>
-                                        <a href="">Last Modified</a>
+                                        <a href="">Open</a>
                                     </li>
                                     <li>
-                                        <a href="">Last Edited</a>
+                                        <a href="">Closed</a>
                                     </li>
                                     <li>
-                                        <a href="">Name</a>
+                                        <a href="">Bugs</a>
                                     </li>
                                     <li>
-                                        <a href="">Date</a>
+                                        <a href="">User Stories</a>
                                     </li>
                                 </ul>
                             </li>
@@ -62,11 +66,12 @@
                     </div>
 
                     <div class="lv-body">
-                        <?php for($i=0;$i<10;$i++){ ?>
+                         
+                        <?php foreach($openissues as $key=>$issue){ ?>
 
                         <div class="lv-item media">
                             <div class="checkbox pull-left">
-                                <span class="badge">119</span>
+                                <span class="badge"><?php echo $issue['issueid']; ?></span>
                                 <label>
                                     <button class="btn btn-xs waves-effect"><i class="md md-bug-report"></i>
                                     </button>
@@ -74,7 +79,7 @@
                                 </label>
                             </div>
                             <div class="media-body">
-                                <div class="lv-title">Create a new feature</div>
+                                <div class="lv-title"><?php echo $issue['title']; ?></div>
 
                                 <div class="lv-actions actions dropdown">
                                     <a href="" data-toggle="dropdown" aria-expanded="true">

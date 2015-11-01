@@ -4,7 +4,8 @@
                 <div class="modal-header bgm-blue">
                     <h4 class="modal-title" style="color:#fff;">Create Issue</h4>
                 </div>
-                <div id="responce">sdfds</div>
+                
+                <div id="responce" class="alert alert-danger" style="display:none;" role="alert"></div>
                 <div class="modal-body">
                     <form class="ajaxform" role="form" method="post" action="<?php echo site_url('dashboard/create_issue');?>">
                        <div class="row">
@@ -29,8 +30,7 @@
                                         <option value="Programming">
                                             Programming</option>
                                         <option value="Other">
-                                            Other</option>
-
+                                            Other</option> 
                                     </select>
                             </div>
                          </div>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-xs-9">
                                 <select name="issuetype" class="form-control">
-                                        <option>Select one</option>
+                                        <option value="">Select one</option>
                                         <option value="100">
                                             Bug</option>
                                         <option value="101">
@@ -57,7 +57,7 @@
                                 <h4 class="pull-right">Title</h4>
                             </div>
                             <div class="col-xs-9">
-                                <input type="text" name="title" value="" class="input-lg form-control fg-input" id="exampleInputEmail1" placeholder="Enter Title">
+                                <input type="text" name="title" value="" class="input-lg form-control fg-input" placeholder="Enter Title">
                             </div>
                          </div> 
                         
