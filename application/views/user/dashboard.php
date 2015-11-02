@@ -69,7 +69,7 @@
                          
                         <?php foreach($openissues as $key=>$issue){ ?>
                         
-                        <div class="lv-item media">
+                        <div class="lv-item media" data="JD<?php echo $issue['issueid']; ?>">
                             <div class="checkbox pull-left">
                                 <span class="badge"><?php echo $issue['issueid']; ?></span>
                                 <label>

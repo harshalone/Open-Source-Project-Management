@@ -593,7 +593,9 @@ $('.loadissue').click(function(){
   event.preventDefault();
   var url_to_load = $(this).attr('href');
   var issueid    = $(this).attr('issueid');
-  $("#ajax-container").load( url_to_load, { issue_id: issueid }, function() {
+  $(".lv-item").removeClass("issue_active");
+  $(this).closest(".media").addClass("issue_active");
+  $("#ajax-container").load( url_to_load, { issue_id: issueid }, function() {  
     $('.loading').hide();
   });
 });

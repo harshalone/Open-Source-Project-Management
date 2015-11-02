@@ -76,3 +76,6 @@ color: #000;
   margin-left: -64px;
   z-index: 100;
 }
+.issue_active{
+background: #FFFFCC;
+}
